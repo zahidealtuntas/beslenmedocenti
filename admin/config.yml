@@ -1,0 +1,63 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Ayarları"
+    files:
+      - name: "settings"
+        label: "Takvim, Kutular ve Linkler"
+        file: "data/settings.json"
+        format: "json"
+        fields:
+          - label: "İletişim E-postası"
+            name: "contactEmail"
+            widget: "string"
+
+          - label: "Linkler"
+            name: "links"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Instagram", name: "instagram", widget: "string" }
+              - { label: "Spotify Podcast", name: "spotify", widget: "string" }
+              - { label: "Sağlıklı Beslenme Atölyesi", name: "workshop", widget: "string" }
+              - { label: "Kitap Linki", name: "book", widget: "string" }
+              - { label: "Doğal Ozempic Gönderisi", name: "postNaturalOzempic", widget: "string" }
+              - { label: "İnsülin Direncine 4 İçecek", name: "postInsulinDrinks", widget: "string" }
+              - { label: "Tartıdan Öte Gönderisi", name: "postTartidanOte", widget: "string" }
+              - { label: "Kabızlık Gönderisi", name: "postKabizlik", widget: "string" }
+              - { label: "Protein Tozu Gönderisi", name: "postProtein", widget: "string" }
+              - { label: "Belini Ölç Gönderisi", name: "postBeliniOlc", widget: "string" }
+
+          - label: "Takvim"
+            name: "calendar"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Ay", name: "month", widget: "string" }
+              - { label: "Yıl", name: "year", widget: "string" }
+              - { label: "Ay Kaç Gün?", name: "daysInMonth", widget: "number", value_type: "int", min: 28, max: 31 }
+              - { label: "Baştaki Boş Kutu", name: "startBlankCount", widget: "number", value_type: "int", min: 0, max: 6 }
+              - label: "Etkinlikler"
+                name: "events"
+                widget: "list"
+                summary: "{{fields.day}} - {{fields.note}}"
+                fields:
+                  - { label: "Gün", name: "day", widget: "number", value_type: "int", min: 1, max: 31 }
+                  - { label: "Not", name: "note", widget: "string" }
+
+          - label: "Yakında Kutuları"
+            name: "programCards"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Üst Etiket", name: "label", widget: "string" }
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }

@@ -1,0 +1,53 @@
+window.BD_DEFAULT_SETTINGS = {
+  contactEmail: "beslenmedocenti@gmail.com",
+  links: {
+    instagram: "https://www.instagram.com/doc.dr.bilgemeralkoc/",
+    spotify: "https://open.spotify.com/show/7FkMcufoXNYAL1J5qtrgD4?si=l0_ENeaRSJ6tLBJbaKmIiQ",
+    workshop: "https://www.instagram.com/p/DYFHNGQDbaJ/",
+    book: "mailto:beslenmedocenti@gmail.com?subject=Yeni%20Kodu%20kitap%20linki",
+    postNaturalOzempic: "https://www.instagram.com/p/DZ73cXBjSX3/",
+    postInsulinDrinks: "https://www.instagram.com/p/DZ2mdGkt24n/",
+    postTartidanOte: "https://www.instagram.com/doc.dr.bilgemeralkoc/p/DZXlNJLDXRv/",
+    postKabizlik: "https://www.instagram.com/p/DZkzo2hDX0F/",
+    postProtein: "https://www.instagram.com/doc.dr.bilgemeralkoc/p/DZeZaCJjSlJ/",
+    postBeliniOlc: "https://www.instagram.com/doc.dr.bilgemeralkoc/p/DZXlNJLDXRv/",
+  },
+  calendar: {
+    month: "Temmuz",
+    year: "2026",
+    daysInMonth: 31,
+    startBlankCount: 2,
+    events: [
+      {
+        day: 6,
+        note: "İnsülin direnci Zoom buluşması",
+      },
+      {
+        day: 29,
+        note: "Kas kütlesini koruma ve zayıflama stratejileri",
+      },
+    ],
+  },
+  programCards: [
+    {
+      label: "Profesyoneller için",
+      title: "Eğitimler",
+      description: "Bilimsel içerikli modüller ve mesleki gelişim eğitimleri.",
+    },
+    {
+      label: "Herkes için",
+      title: "Buluşmalar",
+      description: "İnsülin direnci ve metabolik sağlık gibi konularda canlı oturumlar.",
+    },
+    {
+      label: "Herkes için",
+      title: "Kitap & e-rehberler",
+      description: "Yeni Kodu ve pratik e-rehberler için duyuru alanı.",
+    },
+    {
+      label: "Yakında",
+      title: "Ürünler",
+      description: "Önerilen ürünleri ve seçili kaynakları bulabileceğiniz alan.",
+    },
+  ],
+};

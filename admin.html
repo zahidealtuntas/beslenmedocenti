@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beslenme Doçenti | Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body class="admin-page">
+    <main class="admin-shell">
+      <section class="admin-login" data-login>
+        <img src="assets/beslenme-docenti-lotus-only.png" alt="" />
+        <h1>Admin Paneli</h1>
+        <p>Takvim ve site linklerini düzenlemek için giriş yapın.</p>
+        <form data-login-form>
+          <label>
+            <span>Admin kodu</span>
+            <input type="password" name="pin" autocomplete="current-password" required />
+          </label>
+          <button class="button primary" type="submit">Panele gir</button>
+        </form>
+      </section>
+
+      <section class="admin-panel" data-panel hidden>
+        <header class="admin-header">
+          <div>
+            <p class="eyebrow">Beslenme Doçenti</p>
+            <h1>Takvim ve link yönetimi</h1>
+          </div>
+          <a class="button ghost" href="index.html">Siteye dön</a>
+        </header>
+
+        <form class="admin-form" data-admin-form>
+          <section class="admin-card">
+            <h2>Genel</h2>
+            <label>
+              <span>İletişim e-postası</span>
+              <input type="email" name="contactEmail" required />
+            </label>
+          </section>
+
+          <section class="admin-card">
+            <h2>Takvim</h2>
+            <div class="admin-grid">
+              <label>
+                <span>Ay</span>
+                <input type="text" name="month" required />
+              </label>
+              <label>
+                <span>Yıl</span>
+                <input type="text" name="year" required />
+              </label>
+              <label>
+                <span>Ay kaç gün?</span>
+                <input type="number" name="daysInMonth" min="28" max="31" required />
+              </label>
+              <label>
+                <span>Baştaki boş kutu</span>
+                <input type="number" name="startBlankCount" min="0" max="6" required />
+              </label>
+            </div>
+            <div class="admin-events" data-events></div>
+            <button class="button ghost" type="button" data-add-event>Etkinlik ekle</button>
+          </section>
+
+          <section class="admin-card">
+            <h2>Yakında kutuları</h2>
+            <div class="admin-program-cards" data-program-cards></div>
+            <button class="button ghost" type="button" data-add-program-card>Kutu ekle</button>
+          </section>
+
+          <section class="admin-card">
+            <h2>Linkler</h2>
+            <div class="admin-grid links-grid" data-links></div>
+          </section>
+
+          <div class="admin-actions">
+            <button class="button primary" type="submit">Kaydet</button>
+            <button class="button ghost" type="button" data-reset>Ayarları sıfırla</button>
+            <span data-status></span>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="site-config.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>
