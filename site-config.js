@@ -3,7 +3,6 @@ window.BD_DEFAULT_SETTINGS = {
   links: {
     instagram: "https://www.instagram.com/doc.dr.bilgemeralkoc/",
     spotify: "https://open.spotify.com/show/7FkMcufoXNYAL1J5qtrgD4?si=l0_ENeaRSJ6tLBJbaKmIiQ",
-    workshop: "https://www.instagram.com/p/DYFHNGQDbaJ/",
     book: "mailto:beslenmedocenti@gmail.com?subject=Yeni%20Kodu%20kitap%20linki",
     postNaturalOzempic: "https://www.instagram.com/p/DZ73cXBjSX3/",
     postInsulinDrinks: "https://www.instagram.com/p/DZ2mdGkt24n/",
@@ -50,4 +49,11 @@ window.BD_DEFAULT_SETTINGS = {
       description: "Önerilen ürünleri ve seçili kaynakları bulabileceğiniz alan.",
     },
   ],
+  book: {
+    label: "Kitap",
+    title: "Beslenmenin Yeni Kodu",
+    description: "Takviyeler ve modern diyetler rehberi. Satış linki geldiğinde bu kart doğrudan kitap sayfasına bağlanabilir.",
+    image: "assets/book-yeni-kodu.jpg",
+    imageAlt: "Beslenmenin Yeni Kodu kitap kapağı",
+  },
 };

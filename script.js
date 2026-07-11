@@ -26,6 +26,10 @@ const mergeSettings = (defaults, saved) => ({
     ...defaults.links,
     ...(saved?.links || {}),
   },
+  book: {
+    ...defaults.book,
+    ...(saved?.book || {}),
+  },
   calendar: {
     ...defaults.calendar,
     ...(saved?.calendar || {}),
@@ -100,6 +104,36 @@ const renderProgramCards = () => {
     article.append(label, title, description);
     programList.append(article);
   });
+};
+
+const renderBookCard = () => {
+  const bookCard = document.querySelector("[data-book-card]");
+
+  if (!bookCard || !siteSettings.book) {
+    return;
+  }
+
+  const bookImage = bookCard.querySelector("[data-book-image]");
+  const bookLabel = bookCard.querySelector("[data-book-label]");
+  const bookTitle = bookCard.querySelector("[data-book-title]");
+  const bookDescription = bookCard.querySelector("[data-book-description]");
+
+  if (bookImage && siteSettings.book.image) {
+    bookImage.src = siteSettings.book.image;
+    bookImage.alt = siteSettings.book.imageAlt || "";
+  }
+
+  if (bookLabel) {
+    bookLabel.textContent = siteSettings.book.label || "";
+  }
+
+  if (bookTitle) {
+    bookTitle.textContent = siteSettings.book.title || "";
+  }
+
+  if (bookDescription) {
+    bookDescription.textContent = siteSettings.book.description || "";
+  }
 };
 
 const syncHeader = () => {
@@ -209,6 +243,7 @@ const initManagedContent = async () => {
   siteSettings = await loadSiteSettings();
   applyManagedLinks();
   renderProgramCards();
+  renderBookCard();
   renderEditableCalendar();
 };
 

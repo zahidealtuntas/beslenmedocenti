@@ -12,7 +12,7 @@ collections:
     label: "Site Ayarları"
     files:
       - name: "settings"
-        label: "Takvim, Kutular ve Linkler"
+        label: "Site İçerikleri"
         file: "data/settings.json"
         format: "json"
         fields:
@@ -25,16 +25,15 @@ collections:
             widget: "object"
             collapsed: false
             fields:
-              - { label: "Instagram", name: "instagram", widget: "string" }
-              - { label: "Spotify Podcast", name: "spotify", widget: "string" }
-              - { label: "Sağlıklı Beslenme Atölyesi", name: "workshop", widget: "string" }
-              - { label: "Kitap Linki", name: "book", widget: "string" }
-              - { label: "Doğal Ozempic Gönderisi", name: "postNaturalOzempic", widget: "string" }
-              - { label: "İnsülin Direncine 4 İçecek", name: "postInsulinDrinks", widget: "string" }
-              - { label: "Tartıdan Öte Gönderisi", name: "postTartidanOte", widget: "string" }
-              - { label: "Kabızlık Gönderisi", name: "postKabizlik", widget: "string" }
-              - { label: "Protein Tozu Gönderisi", name: "postProtein", widget: "string" }
-              - { label: "Belini Ölç Gönderisi", name: "postBeliniOlc", widget: "string" }
+              - { label: "Instagram Profil Linki", name: "instagram", widget: "string" }
+              - { label: "Spotify Podcast Linki", name: "spotify", widget: "string" }
+              - { label: "Kitap Satış / Bilgi Linki", name: "book", widget: "string" }
+              - { label: "Doğal Ozempic Gönderi Linki", name: "postNaturalOzempic", widget: "string" }
+              - { label: "İnsülin Direncine 4 İçecek Gönderi Linki", name: "postInsulinDrinks", widget: "string" }
+              - { label: "Tartıdan Öte Gönderi Linki", name: "postTartidanOte", widget: "string" }
+              - { label: "Kabızlık Gönderi Linki", name: "postKabizlik", widget: "string" }
+              - { label: "Protein Tozu Gönderi Linki", name: "postProtein", widget: "string" }
+              - { label: "Belini Ölç Gönderi Linki", name: "postBeliniOlc", widget: "string" }
 
           - label: "Takvim"
             name: "calendar"
@@ -61,3 +60,14 @@ collections:
               - { label: "Üst Etiket", name: "label", widget: "string" }
               - { label: "Başlık", name: "title", widget: "string" }
               - { label: "Açıklama", name: "description", widget: "text" }
+
+          - label: "Kitap Kartı"
+            name: "book"
+            widget: "object"
+            collapsed: false
+            fields:
+              - { label: "Üst Etiket", name: "label", widget: "string" }
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Açıklama", name: "description", widget: "text" }
+              - { label: "Kitap Görseli", name: "image", widget: "image" }
+              - { label: "Görsel Alt Metni", name: "imageAlt", widget: "string" }
