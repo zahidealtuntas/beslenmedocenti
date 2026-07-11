@@ -1,21 +1,21 @@
 {
   "contactEmail": "beslenmedocenti@gmail.com",
   "links": {
-    "instagram": "https://www.instagram.com/doc.dr.bilgemeralkoc/",
-    "spotify": "https://open.spotify.com/show/7FkMcufoXNYAL1J5qtrgD4?si=l0_ENeaRSJ6tLBJbaKmIiQ",
-    "book": "mailto:beslenmedocenti@gmail.com?subject=Yeni%20Kodu%20kitap%20linki",
-    "postNaturalOzempic": "https://www.instagram.com/p/DZ73cXBjSX3/",
+    "postProtein": "https://www.instagram.com/doc.dr.bilgemeralkoc/p/DZeZaCJjSlJ/",
     "postInsulinDrinks": "https://www.instagram.com/p/DZ2mdGkt24n/",
     "postTartidanOte": "https://www.instagram.com/doc.dr.bilgemeralkoc/p/DZXlNJLDXRv/",
+    "book": "mailto:beslenmedocenti@gmail.com?subject=Yeni%20Kodu%20kitap%20linki",
+    "postBeliniOlc": "https://www.instagram.com/doc.dr.bilgemeralkoc/p/DZXlNJLDXRv/",
+    "postNaturalOzempic": "https://www.instagram.com/p/DZ73cXBjSX3/",
     "postKabizlik": "https://www.instagram.com/p/DZkzo2hDX0F/",
-    "postProtein": "https://www.instagram.com/doc.dr.bilgemeralkoc/p/DZeZaCJjSlJ/",
-    "postBeliniOlc": "https://www.instagram.com/doc.dr.bilgemeralkoc/p/DZXlNJLDXRv/"
+    "instagram": "https://www.instagram.com/doc.dr.bilgemeralkoc/",
+    "spotify": "https://open.spotify.com/show/7FkMcufoXNYAL1J5qtrgD4?si=l0_ENeaRSJ6tLBJbaKmIiQ"
   },
   "calendar": {
-    "month": "Temmuz",
+    "month": "Ağustos",
     "year": "2026",
-    "daysInMonth": 31,
-    "startBlankCount": 2,
+    "daysInMonth": 30,
+    "startBlankCount": 3,
     "events": [
       {
         "day": 6,
@@ -24,6 +24,10 @@
       {
         "day": 29,
         "note": "Kas kütlesini koruma ve zayıflama stratejileri"
+      },
+      {
+        "day": 15,
+        "note": "site açılışı"
       }
     ]
   },
