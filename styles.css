@@ -216,10 +216,10 @@ h1 {
 h2 {
   margin-bottom: 0;
   color: var(--brand-2);
-  font-family: var(--script);
-  font-size: clamp(2rem, 4.4vw, 3.6rem);
-  font-weight: 400;
-  line-height: 1.24;
+  font-family: var(--serif);
+  font-size: clamp(2.05rem, 3.8vw, 3.25rem);
+  font-weight: 500;
+  line-height: 1.12;
 }
 
 h3 {
@@ -985,9 +985,9 @@ footer img {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(26px);
-  transition: opacity 700ms ease, transform 700ms ease;
+  opacity: 1;
+  transform: none;
+  transition: none;
 }
 
 .reveal.is-visible {
@@ -996,7 +996,7 @@ footer img {
 }
 
 .delay-1 {
-  transition-delay: 120ms;
+  transition-delay: 0ms;
 }
 
 @keyframes portraitFloat {
@@ -1084,6 +1084,10 @@ footer img {
 }
 
 @media (max-width: 720px) {
+  body {
+    font-size: 17px;
+  }
+
   .site-header {
     min-height: 64px;
     padding: 10px 14px;
@@ -1109,10 +1113,10 @@ footer img {
     min-height: 100dvh;
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 12px;
-    padding: 96px 24px 36px;
+    gap: 10px;
+    padding: 74px 20px 32px;
     border: 0;
     border-radius: 0;
     background:
@@ -1123,8 +1127,8 @@ footer img {
 
   .nav-close {
     position: absolute;
-    top: 18px;
-    right: 18px;
+    top: 14px;
+    right: 14px;
     display: grid;
     place-items: center;
     width: 46px;
@@ -1159,13 +1163,13 @@ footer img {
 
   .nav a {
     width: min(100%, 320px);
-    min-height: 46px;
-    padding: 14px 18px;
+    min-height: 48px;
+    padding: 13px 18px;
     border: 1px solid rgba(76, 98, 79, 0.14);
     border-radius: 999px;
     background: rgba(245, 241, 230, 0.64);
     font-family: var(--serif);
-    font-size: 1.2rem;
+    font-size: 1.24rem;
     text-align: center;
   }
 
@@ -1206,28 +1210,28 @@ footer img {
 
   .eyebrow {
     margin-bottom: 10px;
-    font-size: 0.98rem;
+    font-size: 1.08rem;
     line-height: 1.35;
   }
 
   h1 {
     margin-bottom: 18px;
-    font-size: clamp(1.92rem, 8.2vw, 2.48rem);
+    font-size: clamp(2.12rem, 8.8vw, 2.7rem);
     line-height: 1.1;
   }
 
   h2 {
-    font-size: clamp(1.78rem, 8vw, 2.55rem);
-    line-height: 1.22;
+    font-size: clamp(1.95rem, 7.6vw, 2.58rem);
+    line-height: 1.12;
   }
 
   h3 {
-    font-size: 1.16rem;
+    font-size: 1.24rem;
   }
 
   .lead {
-    font-size: 1.04rem;
-    line-height: 1.66;
+    font-size: 1.12rem;
+    line-height: 1.68;
   }
 
   .hero-actions,
@@ -1305,7 +1309,7 @@ footer img {
   }
 
   .text-stack {
-    font-size: 1.06rem;
+    font-size: 1.12rem;
     line-height: 1.7;
   }
 
@@ -1364,7 +1368,7 @@ footer img {
   }
 
   .program-list p {
-    font-size: 1.03rem;
+    font-size: 1.08rem;
     line-height: 1.6;
   }
 
@@ -1414,11 +1418,11 @@ footer img {
   }
 
   .post-grid h3 {
-    font-size: 1.24rem;
+    font-size: 1.3rem;
   }
 
   .post-grid span {
-    font-size: 0.82rem;
+    font-size: 0.88rem;
   }
 
   .timeline strong {
@@ -1453,5 +1457,11 @@ footer img {
     bottom: -28px;
     width: 210px;
     opacity: 0.07;
+    animation: none;
+  }
+
+  .hero-visual > img,
+  .hero-note {
+    animation: none;
   }
 }
